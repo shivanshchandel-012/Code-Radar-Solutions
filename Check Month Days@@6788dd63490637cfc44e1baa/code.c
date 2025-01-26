@@ -3,45 +3,45 @@
 int main(){
     int n;
     scanf("%d",&n);
-    switch(n){
-        case 1:
+    if(n >= 1 && n <= 12){
+        if(n == 1){
             printf(31);
-            break;
-        case 2:
+        }
+        else if(n == 2){
             printf(28);
-            break;
-        case 3:
+        }
+        else if(n == 3){
             printf(31);
-            break;
-        case 4:
+        }
+        else if(n == 4){
             printf(30);
-            break;
-        case 5:
+        }
+        else if(n == 5){
             printf(31);
-            break;
-        case 6:
+        }
+        else if(n == 6){
             printf(30);
-            break;
-        case 7:
+        }
+        else if(n == 7){
             printf(31);
-            break;
-        case 8:
+        }
+        else if(n == 8){
             printf(31);
-            break;
-        case 9:
+        }
+        else if(n == 9){
             printf(30);
-            break;
-        case 10:
+        }
+        else if(n == 10){
             printf(31);
-            break;
-        case 11:
+        }
+        else if(n == 11){
             printf(30);
-            break;
-        case 12:
+        }
+        else if(n == 12){
             printf(31);
-            break;
+        }
     }
-    if(n < 1 || n > 12){
+    else{
         printf("Invalid month");
     }
     return 0;
