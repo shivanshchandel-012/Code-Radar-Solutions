@@ -6,7 +6,7 @@ int main(){
     if(q > 0 && w > 0 || q < 0 && w < 0){
         printf("Same Sign")
     }
-    else{
+    else if(q > 0 && w < 0 || q < 0 && w > 0){
         printf("Different Sign");
     }
     return 0;
