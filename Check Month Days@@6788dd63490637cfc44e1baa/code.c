@@ -41,7 +41,7 @@ int main(){
             printf(31);
             break;
     }
-    if(n <= 1 && n>= 12){
+    if(n < 1 || n > 12){
         printf("Invalid month");
     }
     return 0;
