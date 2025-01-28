@@ -16,8 +16,6 @@ int main(){
         if(i<ml){
             nsp--;
             ns++;
-        }else if(i == ml){
-            break;
         }
         printf("\n");
     }
