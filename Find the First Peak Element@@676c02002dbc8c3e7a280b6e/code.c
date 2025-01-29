@@ -9,7 +9,7 @@ int main(){
     }
     int great = arr[0];
     int found = -1;
-    for(int i=0;i<n;i++){
+    for(int i=1;i<n;i++){
         if(arr[i] > great){
             found = arr[i];
             break;
