@@ -4,21 +4,20 @@ int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
-    for(int i=1;i<n;i++){
+    for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
     int a = 0;
     for(int i=1;i<n;i++){
-        for(int j=1;j<n;j++){
-            if(arr[j] > arr[i]){
-                a = 1;
-            }
+        if(arr[i]<arr[i-1]){
+            a = 1;
+            break;
         }
     }
     if(a == 1){
-        printf("Sorted");
-    }else{
         printf("Not Sorted");
+    }else{
+        printf("Sorted");
     }
     return 0;
 }
