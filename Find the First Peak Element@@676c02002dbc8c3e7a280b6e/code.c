@@ -8,12 +8,13 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int great = arr[0];
+    int found = -1;
     for(int i=0;i<n;i++){
         if(arr[i] > great){
-            great = arr[i];
+            found = arr[i];
             break;
         }
     }
-    printf("%d",great);
+    printf("%d",found);
     return 0;
 }
