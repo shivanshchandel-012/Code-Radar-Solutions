@@ -18,7 +18,6 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i]<small){
             small = arr[i];
-            break;
         }
     }
     printf("%d %d",small,great);
