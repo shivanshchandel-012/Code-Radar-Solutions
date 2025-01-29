@@ -9,8 +9,8 @@ int main(){
     }
     int great = arr[0];
     for(int i=1;i<n;i++){
-        if(arr[i+1] > great){
-            great = arr[i+1];
+        if(arr[i] > great){
+            great = arr[i];
             break;
         }
     }
