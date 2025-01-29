@@ -11,7 +11,6 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i]>great){
             great = arr[i];
-            break;
         }
     }
     int small = arr[0];
