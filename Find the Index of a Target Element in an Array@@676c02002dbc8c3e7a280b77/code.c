@@ -14,7 +14,7 @@ int main(){
             printf("%d",i);
             break;
         }
-        else{
+        else if(arr[i] != x){
             printf("%d",-1);
         }
     }
