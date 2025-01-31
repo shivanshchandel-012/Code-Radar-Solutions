@@ -16,6 +16,7 @@ int main(){
         }
         else if(arr[i] != x){
             printf("%d",-1);
+            break;
         }
     }
     return 0;
