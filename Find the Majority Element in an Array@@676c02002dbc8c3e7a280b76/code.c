@@ -20,9 +20,6 @@ int main(){
             }
         }
     }
-    if(count == n-1){
-        found = -1;
-    }
     printf("%d",found);
     return 0;
 }
