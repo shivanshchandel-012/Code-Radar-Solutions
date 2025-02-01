@@ -15,7 +15,7 @@ int main(){
                 break;
             }
         }
-        break;
+        if(found != -1) break;
     }
     printf("%d",found);
     return 0;
