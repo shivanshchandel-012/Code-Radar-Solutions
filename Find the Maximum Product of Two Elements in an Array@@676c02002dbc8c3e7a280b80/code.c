@@ -12,7 +12,7 @@ int main(){
         for(int j=i+1;j<=n-1;j++){
             product = arr[i]*arr[j];
             if(product > maxproduct){
-                product = maxproduct;
+                maxproduct = product;
             }
         }
     }
