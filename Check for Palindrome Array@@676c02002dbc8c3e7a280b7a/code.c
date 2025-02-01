@@ -4,10 +4,10 @@ int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
-    int arr2[n];
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
+    int arr2[n];
     for(int i=0;i<n;i++){
         arr2[i] = arr[n-i];
     }
