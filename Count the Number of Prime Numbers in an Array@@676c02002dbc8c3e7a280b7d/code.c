@@ -9,10 +9,17 @@ int main(){
     }
     int count = 0;
     for(int i=0;i<n;i++){
-        for(int j=2;j<n-1;j++){
-            if(n%arr[j] == 0){
-                count++;
+        int num = arr[i];
+        if(num < 2) continue;
+        int isprime = 1;
+        for(int j=2;j*j<num;j++){
+            if(num%j == 0){
+                isprime = 0;
+                break;
             }
+        }
+        if(isprime){
+            count++;
         }
     }
     printf("%d",count);
