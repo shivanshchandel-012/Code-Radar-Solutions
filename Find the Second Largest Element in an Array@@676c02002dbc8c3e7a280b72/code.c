@@ -8,8 +8,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    b = INT_MIN;
-    c = INT_MIN;
+    int b = INT_MIN;
+    int c = INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i] > b){
             b = arr[i];
