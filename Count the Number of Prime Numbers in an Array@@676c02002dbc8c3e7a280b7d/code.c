@@ -12,7 +12,7 @@ int main(){
         int num = arr[i];
         if(num < 2) continue;
         int isprime = 1;
-        for(int j=2;j*j<num;j++){
+        for(int j=2;j*j<=num;j++){
             if(num%j == 0){
                 isprime = 0;
                 break;
