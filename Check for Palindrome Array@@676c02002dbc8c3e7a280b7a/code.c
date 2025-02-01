@@ -9,7 +9,7 @@ int main(){
     }
     int arr2[n];
     for(int i=0;i<n;i++){
-        arr2[i] = arr[n-i];
+        arr2[i] = arr[n-i-1];
     }
     int pal = 0;
     for(int i=0;i<n/2;i++){
@@ -19,6 +19,6 @@ int main(){
         }
     }
     if(pal == 1) printf("YES");
-    else print("NO");
+    else printf("NO");
     return 0;
 }
