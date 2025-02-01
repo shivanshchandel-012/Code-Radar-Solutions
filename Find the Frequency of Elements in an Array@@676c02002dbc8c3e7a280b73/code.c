@@ -4,10 +4,11 @@ int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
+    int counted[n];
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
+        counted[i] = 0;
     }
-    int counted[n];
     for(int i=0;i<n;i++){
         if(counted[i]){
             continue;
