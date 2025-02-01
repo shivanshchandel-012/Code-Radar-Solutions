@@ -14,7 +14,7 @@ int main(){
             continue;
         }
         int f = 1;
-        for(int j=i+1;j<=n;j++){
+        for(int j=i+1;j<n;j++){
             if(arr[i] == arr[j]){
                 f++;
                 counted[j] = 1;
