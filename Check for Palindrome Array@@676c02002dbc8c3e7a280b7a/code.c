@@ -9,7 +9,7 @@ int main(){
         scanf("%d ",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        arr2[i] = arr[(n-1)-i];
+        arr2[i] = arr[n-i];
     }
     int pal = 0;
     for(int i=0;i<n/2;i++){
