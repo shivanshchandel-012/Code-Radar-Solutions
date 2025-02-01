@@ -9,7 +9,7 @@ int main(){
         scanf("%d ",&arr[i]);
         counted[i] = 0;
     }
-    for(int i=0;i<=n;i++){
+    for(int i=0;i<n;i++){
         if(counted[i]){
             continue;
         }
