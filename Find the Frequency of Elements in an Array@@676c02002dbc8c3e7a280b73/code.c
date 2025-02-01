@@ -13,6 +13,9 @@ int main(){
             if(arr[i] == arr[j]){
                 f++;
                 printf("%d %d\n",arr[i],f);
+            }else{
+                f = 1;
+                printf("%d %d\n",arr[i],f);
             }
         }
     }
