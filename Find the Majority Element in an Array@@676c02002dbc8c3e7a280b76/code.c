@@ -12,11 +12,16 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=0;j<i;j++){
             if(arr[i] == arr[j]){
+                if(found == -1){
+                    found = arr[i];
+                }
                 count++;
-                found = arr[i];
                 break;
             }
         }
+    }
+    if(count == n-1){
+        found = -1;
     }
     printf("%d",found);
     return 0;
