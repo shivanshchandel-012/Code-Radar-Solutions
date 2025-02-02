@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int b = INT_MIN;
-    int c = INT_MIN;
+    int c = -1;
     for(int i=0;i<n;i++){
         if(arr[i] > b){
             b = arr[i];
