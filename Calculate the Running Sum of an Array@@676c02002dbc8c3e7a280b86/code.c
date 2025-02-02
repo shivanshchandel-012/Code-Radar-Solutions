@@ -9,8 +9,8 @@ int main(){
     }
     int sum[n];
     sum[0] = arr[0];
-    for(int i=0;i<n;i++){
-        sum[i] = arr[i] + sum[i+1];
+    for(int i=1;i<n;i++){
+        sum[i] = arr[i] + sum[i-1];
     }
     for(int i=0;i<n;i++){
         printf("%d ",sum[i]);
