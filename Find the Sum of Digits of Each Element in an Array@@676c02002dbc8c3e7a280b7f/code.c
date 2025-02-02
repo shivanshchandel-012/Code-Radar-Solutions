@@ -10,10 +10,10 @@ int main(){
     for(int i=0;i<n;i++){
         while(arr[i] != 0){
             int digit = arr[i]%10;
-            int sum[i] += digit;
+            int sum += digit;
             arr[i] /= 10;
         }
-        printf("%d ",sum[i])
+        printf("%d ",sum)
     }
     return 0;
 }
