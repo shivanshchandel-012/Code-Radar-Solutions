@@ -11,7 +11,9 @@ int main(){
     scanf("%d",&k);
     int count = 0;
     for(int i=0;i<n;i++){
-        if(arr[i] > k) count++;
+        if(arr[i] > k){
+            count++;
+        }
     }
     printf("%d",count);
     return 0;
