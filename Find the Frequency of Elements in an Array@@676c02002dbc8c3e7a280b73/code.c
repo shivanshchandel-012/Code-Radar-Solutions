@@ -16,8 +16,8 @@ int main(){
         int f = 1;
         for(int j=i+1;j<n;j++){
             if(arr[i] == arr[j]){
-                f++;
                 counted[j] = 1;
+                f++;
             }
         }
         printf("%d %d\n",arr[i],f);
