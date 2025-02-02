@@ -9,14 +9,12 @@ int main(){
     }
     int t;
     scanf("%d",&t);
-    int i = 0;
-    int j = n-1;
-    while(i<j){
-        if(arr[i] + arr[j] == t){
-            printf("%d %d\n",arr[i],arr[j]);
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i] + arr[j] == t){
+                printf("%d %d\n",arr[i],arr[j]);
+            }
         }
-        else if(arr[i] + arr[j] > t) j--;
-        else i++;
     }
     return 0;
 }
