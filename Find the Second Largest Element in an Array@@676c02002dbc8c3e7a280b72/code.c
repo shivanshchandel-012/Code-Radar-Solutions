@@ -20,7 +20,7 @@ int main(){
             c = arr[i];
         }
         else{
-            printf(-1);
+            printf("%d",-1);
         }
     }
     printf("%d",c);
