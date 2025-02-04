@@ -15,6 +15,7 @@ int main(){
             sum += digit;
             num /= 10;
         }
+        if(sum < 0) sum = -sum;
         printf("%d ",sum);
     }
     return 0;
