@@ -13,9 +13,9 @@ int main(){
         for(int j=i+1;j<n;j++){
             if(arr[i] + arr[j] == t){
                 printf("%d %d\n",arr[i],arr[j]);
-                return 0;
             }
         }
+        return 0;
     }
     return 0;
 }
