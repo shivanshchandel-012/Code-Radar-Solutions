@@ -14,8 +14,8 @@ int main(){
             if(arr[i] + arr[j] == t){
                 if(arr[i]=a && arr[j]=b) return 0;
                 else{ 
-                    arr[i]=a;
-                    arr[j]=b;
+                    a=arr[i];
+                    b=arr[j];
                     printf("%d %d\n",arr[i],arr[j]);
                     break;
                 }
