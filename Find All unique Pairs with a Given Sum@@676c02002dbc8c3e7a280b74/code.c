@@ -12,7 +12,7 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i] + arr[j] == t){
-                if(arr[i]=a && arr[j]=b) return 0;
+                if(arr[i]==a && arr[j]==b) return 0;
                  a=arr[i];
                 b=arr[j];
                 printf("%d %d\n",arr[i],arr[j]);
