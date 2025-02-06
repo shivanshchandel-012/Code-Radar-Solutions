@@ -10,6 +10,7 @@ int main(){
         int a = 1;
         for(int k=1;k<=2*i-1;k++){
             printf("%c",a+64);
+            a++;
         }
         printf("\n");
     }
