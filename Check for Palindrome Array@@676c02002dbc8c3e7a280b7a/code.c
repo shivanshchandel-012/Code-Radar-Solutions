@@ -11,14 +11,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
-    int arr2[n];
-    for(int i=0;i<n;i++){
-        arr2[i] = arr[n-i-1];
-    }
-    int pal = 0;
+    int pal = 1;
     for(int i=0;i<n/2;i++){
-        if(arr[i] == arr2[i]){
-            pal = 1;
+        if(arr[i] != arr[n-i-1]){
+            pal = 0;
             break;
         }
     }
