@@ -20,7 +20,7 @@ int main(){
             }
         }
     }
-    if(found == -1) printf("-1");
+    if(found == 1) printf("-1");
     else printf("%d",found);
     return 0;
 }
