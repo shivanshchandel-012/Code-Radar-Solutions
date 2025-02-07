@@ -6,6 +6,7 @@ int main(){
     char str2[100];
     scanf("%s",str1);
     scanf("%s",str2);
-    printf("%s",str1.concat(str2));
+    strcat(str1,str2);
+    printf("%s",str1);
     return 0;
 }
