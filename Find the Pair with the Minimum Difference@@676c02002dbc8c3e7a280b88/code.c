@@ -15,7 +15,16 @@ int main(){
     int min_diff = INT_MAX;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i] - arr[j] == min_diff || arr[j] - arr[i] == min_diff){
+            int diff = arr[i] - arr[j];
+            if(diff < 0) diff = -diff;
+            if(diff < min_diff) min_diff == diff;
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            int diff = arr[i] - arr[j];
+            if(diff < 0) diff = -diff;
+            if(diff == min_diff){
                 printf("%d %d",arr[i],arr[j]);
             }
         }
