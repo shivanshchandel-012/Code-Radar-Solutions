@@ -7,6 +7,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    if(n<2){
+        printf("%d",arr[2]);
+        return 0;
+    }
     int count = 0;
     int found = -1;
     for(int i=0;i<n;i++){
