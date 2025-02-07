@@ -2,8 +2,12 @@
 #include <string.h>
 
 int main(){
-    char str[100];
-    scanf("%s",str);
-    printf("%d",strlen(str));
+    char str;
+    int len = 0;
+    scanf("%c",str);
+    while(ch != '\n'){
+        len++;
+    }
+    printf("%d",len);
     return 0;
 }
