@@ -8,7 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if(n<2){
-        printf("%d",arr[1]);
+        printf("%d",arr[0]);
         return 0;
     }
     int count = 0;
