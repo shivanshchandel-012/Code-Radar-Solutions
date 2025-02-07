@@ -8,14 +8,22 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int smallest = INT_MAX;
+    int found = 0;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i] == arr[j] && arr[i]<smallest){
-                smallest = arr[i];
+            if(arr[i] == arr[j]){
+                found = arr[i];
             }
         }
     }
-    printf("%d",smallest);
+    int smallest = INT_MAX;
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(found < smallest){
+                smallest = found;
+            }
+        }
+    }
+    printf("%d",found);
     return 0;
 }
