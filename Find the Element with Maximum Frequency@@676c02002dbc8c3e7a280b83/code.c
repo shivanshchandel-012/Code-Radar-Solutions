@@ -16,7 +16,5 @@ int main(){
         }
     }
     printf("%d",found);
-    if(found == 5) printf("4");
-    else if(found == 4) printf("1");
     return 0;
 }
