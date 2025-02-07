@@ -5,7 +5,7 @@ int main(){
     char str;
     int len = 0;
     scanf("%c",str);
-    while(ch != '\n'){
+    while(str != '\n'){
         len++;
     }
     printf("%d",len);
