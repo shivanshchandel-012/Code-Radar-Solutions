@@ -12,7 +12,7 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i] == arr[j]){
-                if(found == -1){
+                if(found == 0){
                     found = arr[i];
                 }
                 count++;
@@ -20,6 +20,7 @@ int main(){
             }
         }
     }
-    printf("%d",found);
+    if(found == -1) printf("-1");
+    else printf("%d",found);
     return 0;
 }
