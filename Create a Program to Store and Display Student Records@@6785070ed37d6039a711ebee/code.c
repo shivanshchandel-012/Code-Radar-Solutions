@@ -8,9 +8,9 @@ typedef struct student{
 int main(){
     int n;
     scanf("%d",&n);
+    student s[n];
     for(int i=0;i<n;i++){
-        student s[i];
-        scanf("%d %s %f",s[i].roll,s[i].name,s[i].mark);
+        scanf("%d %s %f",&s[i].roll,s[i].name,&s[i].mark);
     }
     for(int i=0;i<n;i++){
         printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].roll,s[i].name,s[i].mark);
