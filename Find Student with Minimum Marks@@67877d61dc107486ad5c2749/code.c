@@ -17,7 +17,7 @@ int main(){
     float min = FLT_MAX;
     for(int i=0;i<n;i++){
         if(s[i].m < min){
-            min = s[i].min;
+            min = s[i].m;
         }
     }
     for(int i=0;i<n;i++){
