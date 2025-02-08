@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&n);
     student s[n];
     for(int i=0;i<n;i++){
-        scanf("%d %s %f",s[i].roll,s[i].name,s[i].mark);
+        scanf("%d %s %f",&s[i].roll,s[i].name,&s[i].mark);
     }
     float sum = 0.0;
     for(int i=0;i<n;i++){
