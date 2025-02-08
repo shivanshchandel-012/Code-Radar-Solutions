@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&n);
     student s[n];
     for(int i=0;i<n;i++){
-        scanf("%d %s %f",&s[i].n,s[i].n,&s[i].m);
+        scanf("%d %s %f",&s[i].n,s[i].name,&s[i].m);
     }
     float t;
     scanf("%f",&t);
