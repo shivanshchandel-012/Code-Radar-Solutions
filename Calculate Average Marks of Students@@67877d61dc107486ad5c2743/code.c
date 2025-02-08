@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d %s %f",s[i].roll,s[i].name,s[i].mark);
     }
-    float sum = 0;
+    float sum = 0.0;
     for(int i=0;i<n;i++){
         sum += s[i].mark;
     }
