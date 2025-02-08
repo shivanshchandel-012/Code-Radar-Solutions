@@ -21,7 +21,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(s[i].mark == high){
-            printf("Top Scorer: Roll number: %d, Name: %s, Marks: %.2f",s[i].roll,s[i].name,s[i].mark);
+            printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",s[i].roll,s[i].name,s[i].mark);
         }
     }
     return 0;
