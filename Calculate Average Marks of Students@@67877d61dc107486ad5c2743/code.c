@@ -18,6 +18,6 @@ int main(){
         sum += s[i].mark;
     }
     float avg = sum/n;
-    printf("%.2f",avg);
+    printf("Average Marks: %.2f",avg);
     return 0;
 }
