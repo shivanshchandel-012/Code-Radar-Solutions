@@ -13,9 +13,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&s[i].n,s[i].n,&s[i].m);
     }
-    int count = 0;
     float t;
     scanf("%f",&t);
+    int count = 0;
     for(int i=0;i<n;i++){
         if(s[i].m > t) count++;
     }
