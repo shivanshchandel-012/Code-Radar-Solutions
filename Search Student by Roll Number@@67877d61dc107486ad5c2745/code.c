@@ -23,6 +23,6 @@ int main(){
             break;
         }
     }
-    if(!found) printf("Student not found")
+    if(!found) printf("Student not found");
     return 0;
 }
