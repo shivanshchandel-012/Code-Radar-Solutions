@@ -16,12 +16,12 @@ int main(){
     int r;
     scanf("%d",&r);
     for(int i=0;i<n;i++){
-        if(r == s[i].r){
-            printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].r,s[i].n,s[i].m);
+        if(r != s[i].r){
+            printf("Student not found");
+            return 0;
         }
         else{
-            printf("Student not found");
-            break;
+            printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].r,s[i].n,s[i].m)
         }
     }
     return 0;
