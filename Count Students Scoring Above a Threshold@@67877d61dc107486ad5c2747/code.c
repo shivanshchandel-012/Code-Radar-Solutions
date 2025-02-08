@@ -17,7 +17,9 @@ int main(){
     scanf("%f",&t);
     int count = 0;
     for(int i=0;i<n;i++){
-        if(s[i].m > t) count++;
+        if(s[i].m > t){
+            count++;
+        }
     }
     printf("Count of students scoring above %.2f: %d",count);
     return 0;
