@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <limits.h>
+#include <float.h>
 
 typedef struct student{
     char name[50];
@@ -14,7 +14,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&s[i].n,s[i].name,&s[i].m);
     }
-    float min = INT_MAX;
+    float min = FLT_MAX;
     for(int i=0;i<n;i++){
         if(s[i].m < min){
             min = s[i].min;
