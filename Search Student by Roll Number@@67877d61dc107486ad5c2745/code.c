@@ -21,6 +21,7 @@ int main(){
         }
         else{
             printf("Student not found");
+            break;
         }
     }
     return 0;
