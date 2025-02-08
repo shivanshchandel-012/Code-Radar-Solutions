@@ -24,7 +24,7 @@ int main(){
             a = 1;
             break;
         }
+        else printf("Not All Passed");
     }
-    if(a == 0) printf("Not All Passed");
     return 0;
 }
