@@ -20,6 +20,7 @@ int main(){
         if(r == s[i].r){
             printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].r,s[i].n,s[i].m);
             found = 1;
+            break;
         }
     }
     if(!found) printf("Student not found")
