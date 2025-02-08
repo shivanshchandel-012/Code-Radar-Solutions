@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <limit.h>
+#include <limits.h>
 
 typedef struct student{
     char name[50];
