@@ -15,15 +15,13 @@ int main(){
     }
     int r;
     scanf("%d",&r);
+    int found = 0;
     for(int i=0;i<n;i++){
         if(r == s[i].r){
             printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].r,s[i].n,s[i].m);
-            break;
-        }
-        else{
-            printf("Student not found");
-            break;
+            found = 1;
         }
     }
+    if(!found) printf("Student not found")
     return 0;
 }
