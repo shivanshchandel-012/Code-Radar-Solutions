@@ -18,7 +18,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(r != s[i].r){
             printf("Student not found");
-            return 0;
+            break;
         }
         else{
             printf("Roll Number: %d, Name: %s, Marks: %.2f",s[i].r,s[i].n,s[i].m)
