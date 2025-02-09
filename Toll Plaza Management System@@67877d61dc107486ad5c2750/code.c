@@ -20,7 +20,7 @@ int main(){
         if(s[i].v == "Car") toll1 += s[i].n;
         else if(s[i].v == "Truck") toll2 += s[i].n;
         else if(s[i].v == "Bike") toll3 += s[i].n;
-        printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f",toll1,toll2,toll3);
     }
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f",toll1,toll2,toll3);
     return 0;
 }
