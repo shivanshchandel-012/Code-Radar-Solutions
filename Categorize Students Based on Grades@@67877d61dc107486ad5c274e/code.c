@@ -21,7 +21,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(s[i].mark == grade){
-            printf("Roll number: %d, Name: %s, Grade: %c",s[i].roll,s[i].name,grade);
+            printf("Roll number: %d, Name: %s, Grade: %c\n",s[i].roll,s[i].name,grade);
         }
     }
     return 0;
