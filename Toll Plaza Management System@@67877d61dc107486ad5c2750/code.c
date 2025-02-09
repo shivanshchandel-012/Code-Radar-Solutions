@@ -9,14 +9,14 @@ typedef struct vehicle{
 int main(){
     int a;
     scanf("%d",&a);
-    vehicle s[n];
-    for(int i=0;i<n;i++){
+    vehicle s[a];
+    for(int i=0;i<a;i++){
         scanf("%s %s %lf",s[i].num,s[i].v,&s[i].n);
     }
     float toll1 = 0.0;
     float toll2 = 0.0;
     float toll3 = 0.0;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<a;i++){
         if(s[i].v == "Car") toll1 += s[i].n;
         else if(s[i].v == "Truck") toll2 += s[i].n;
         else if(s[i].v == "Bike") toll3 += s[i].n;
