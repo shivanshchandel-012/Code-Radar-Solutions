@@ -25,11 +25,11 @@ int main(){
             count1++;
             rev1 += s[i].price;
         }
-        if(strcmp(s[i].subs,"Premium") == 0){
+        else if(strcmp(s[i].subs,"Premium") == 0){
             count2++;
             rev2 += s[i].price;
         }
-        if(strcmp(s[i].subs,"Standard") == 0){
+        else if(strcmp(s[i].subs,"Standard") == 0){
             count3++;
             rev3 += s[i].price;
         }
