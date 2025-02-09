@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 typedef struct vehicle{
     char num[50];
@@ -17,9 +18,9 @@ int main(){
     float toll2 = 0.0;
     float toll3 = 0.0;
     for(int i=0;i<a;i++){
-        if(s[i].v == "Car") toll1 += s[i].n;
-        else if(s[i].v == "Truck") toll2 += s[i].n;
-        else if(s[i].v == "Bike") toll3 += s[i].n;
+        if(strcmp(s[i].v,"Car") == 0) toll1 += s[i].n;
+        else if(strcmp(s[i].v,"Truck") == 0) toll2 += s[i].n;
+        else if(strcmp(s[i].v,"Bike") == 0) toll3 += s[i].n;
     }
     printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f",toll1,toll2,toll3);
     return 0;
