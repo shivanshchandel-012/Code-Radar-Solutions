@@ -10,6 +10,6 @@ int main(){
     for(int i=0;i<=7;i++){
         scanf("%s %lf",t[i].day,&t[i].temp);
     }
-    printf("Average Temperature: %.2f",s[3].temp);
+    printf("Average Temperature: %.2f",t[3].temp);
     return 0;
 }
