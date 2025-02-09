@@ -18,11 +18,7 @@ int main(){
         if(s[i].mark >= 85) grade = 'A';
         else if(70<=s[i].mark<=84) grade = 'B';
         else if(s[i].mark < 70) grade = 'C';
-    }
-    for(int i=0;i<n;i++){
-        if(s[i].mark == grade){
-            printf("Roll number: %d, Name: %s, Grade: %c\n",s[i].roll,s[i].name,grade);
-        }
+        printf("Roll number: %d, Name: %s, Grade: %c\n",s[i].roll,s[i].name,grade);
     }
     return 0;
 }
