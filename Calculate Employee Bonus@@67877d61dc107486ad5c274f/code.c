@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&n);
     emp s[n];
     for(int i=0;i<n;i++){
-        scanf("%d %s &lf",&s[i].id,s[i].name,&s[i].salary);
+        scanf("%d %s %lf",&s[i].id,s[i].name,&s[i].salary);
     }
     float bonus;
     for(int i=0;i<n;i++){
