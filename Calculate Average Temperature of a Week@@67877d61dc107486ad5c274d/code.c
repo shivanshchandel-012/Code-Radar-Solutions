@@ -8,11 +8,11 @@ typedef struct temperature{
 int main(){
     temperature t[7];
     for(int i=0;i<=7;i++){
-        scanf("%s %d",s[i].day,&s[i].temp);
+        scanf("%s %d",t[i].day,&t[i].temp);
     }
     float sum = 0;
     for(int i=0;i<=7;i++){
-        sum += s[i].temp;
+        sum += t[i].temp;
     }
     float avg = sum/7.0;
     printf("Average Temperature: %.2f",avg);
