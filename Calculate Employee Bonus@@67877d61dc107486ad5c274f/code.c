@@ -15,8 +15,8 @@ int main(){
     }
     float bonus;
     for(int i=0;i<n;i++){
-        if(s[i].salary < 50000) bonus = 10%s[i].salary;
-        else bonus = 5%s[i].salary;
+        if(s[i].salary < 50000) bonus = 0.10*s[i].salary;
+        else bonus = 0.05*s[i].salary;
         printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",s[i].id,s[i].name,bonus);
     }
     return 0;
