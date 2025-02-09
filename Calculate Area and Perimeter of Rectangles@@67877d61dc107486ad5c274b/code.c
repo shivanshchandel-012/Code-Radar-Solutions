@@ -12,8 +12,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%lf %lf",&s[i].l,&s[i].b);
     }
-    for(int i=1;i<=n;i++){
-        printf("Rectancle %d: Area = %.2f, Perimeter = %.2f\n",i,s[i].l*s[i].b,2*(s[i].l+s[i].b));
+    for(int i=0;i<n;i++){
+        printf("Rectancle %d: Area = %.2f, Perimeter = %.2f\n",i+1,s[i].l*s[i].b,2*(s[i].l+s[i].b));
     }
     return 0;
 }
