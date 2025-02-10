@@ -10,7 +10,7 @@ int main(){
         for(int j=0;j<=nsp;j++){
             printf(" ");
         }
-        for(int k=1;k<=ns;k++){
+        for(int k=0;k<=ns;k++){
             printf("*");
         }
         if(i<ml){
