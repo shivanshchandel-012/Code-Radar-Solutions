@@ -2,8 +2,8 @@
 
 int main(){
     unsigned int n;
-    scanf("%d",&n);
+    scanf("%u",&n);
     unsigned int bit = n & -n;
-    printf("%d",bit);
+    printf("%u",bit);
     return 0;
 }
