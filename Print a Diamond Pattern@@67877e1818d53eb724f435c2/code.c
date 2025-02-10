@@ -13,7 +13,7 @@ int main(){
         for(int k=1;k<=ns;k++){
             printf("*");
         }
-        if(i<=ml){
+        if(i<ml){
             nsp--;
             ns += 2;
         }
