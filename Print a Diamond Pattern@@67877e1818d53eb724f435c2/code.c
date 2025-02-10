@@ -6,8 +6,8 @@ int main(){
     int nsp = a/2;
     int ns = 1;
     int ml = a/2 + 1;
-    for(int i=1;i<=a;i++){
-        for(int j=1;j<=nsp;j++){
+    for(int i=0;i<=a;i++){
+        for(int j=0;j<=nsp;j++){
             printf(" ");
         }
         for(int k=1;k<=ns;k++){
