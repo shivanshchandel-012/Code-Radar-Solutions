@@ -1,27 +1,35 @@
 #include <stdio.h>
 
-int main(){
-    int a;
-    scanf("%d",&a);
-    int nsp = a/2;
-    int ns = 1;
-    int ml = a/2 + 1;
-    for(int i=0;i<=a;i++){
-        for(int j=0;j<=nsp;j++){
+void printDiamond(int n) {
+
+    for (int i = 1; i <= n; i++) {
+
+        for (int j = 1; j <= n - i; j++) {
             printf(" ");
         }
-        for(int k=0;k<=ns;k++){
+        for (int j = 1; j <= (2 * i - 1); j++) {
             printf("*");
-        }
-        if(i<ml){
-            nsp--;
-            ns += 2;
-        }
-        else{
-            nsp++;
-            ns -= 2;
         }
         printf("\n");
     }
+    
+    for (int i = n - 1; i >= 1; i--) {
+
+        for (int j = 1; j <= n - i; j++) {
+            printf(" ");
+        }
+
+        for (int j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    printDiamond(n);
     return 0;
 }
