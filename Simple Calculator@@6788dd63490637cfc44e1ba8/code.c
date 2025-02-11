@@ -11,7 +11,7 @@ int main(){
     }else if(c == '/'){
         printf("%lf",a/b);
     }else if(c == '-'){
-        printf("%lf",a-b);
+        printf("%.0lf",a-b);
     }
     return 0;
 }
