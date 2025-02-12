@@ -1,13 +1,11 @@
 // Your code here...
 #include<stdio.h>
-#include<string.h>
 
 int main(){
     char str[50];
     scanf("%s",str);
-    int len = strlen(str);
     int freq[256];
-    for(int i=0;i<len;i++){
+    for(int i=0;str[i] < '\0';i++){
         freq[str[i]]++;
     }
     int max_freq = 0;
