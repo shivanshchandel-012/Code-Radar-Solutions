@@ -6,7 +6,7 @@ int main(){
     char str2[100];
     scanf("%s %s",str1,str2);
     char str3[100];
-    int i=j=0;
+    int i=0,j=0;
     while(str1[i] != '\0'){
         str3[i] = str1[i];
         i++;
