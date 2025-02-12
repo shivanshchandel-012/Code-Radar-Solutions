@@ -16,6 +16,7 @@ int main(){
         i++;
         j++;
     }
+    str3[i] = '\0';
     printf("%s",str3);
     return 0;
 }
