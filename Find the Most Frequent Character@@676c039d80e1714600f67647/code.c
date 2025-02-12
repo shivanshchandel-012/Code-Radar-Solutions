@@ -18,7 +18,7 @@ int main(){
     }
     for(int i='a';i<='z';i++){
         if(freq[i] == max_freq){
-            printf("%c",max_freq);
+            printf("%c",i);
             break;
         }
     }
