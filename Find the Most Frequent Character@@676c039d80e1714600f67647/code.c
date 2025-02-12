@@ -6,12 +6,20 @@ int main(){
     char str[50];
     scanf("%s",str);
     int len = strlen(str);
-    int freq = str[0];
+    int freq[256];
     for(int i=0;i<len;i++){
-        for(int j=i+1;j<len;j++){
-            if(str[i] == str[j]){
-                printf("%c",str[j]);
-            }
+        freq[str[i]]++;
+    }
+    int max_freq = 0;
+    for(int i=0;i<256;i++){
+        if(freq[i] > max_freq){
+            max_freq = freq[i]
+        }
+    }
+    for(int i='a';i<='z';i++){
+        if(freq[i] == max_freq){
+            printf("%c",max_freq);
+            break;
         }
     }
     return 0;
