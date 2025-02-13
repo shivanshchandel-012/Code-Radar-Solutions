@@ -10,11 +10,9 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    k = k%n;
     for(int i=0;i<n;i++){
-        temp((i+k)%n) = arr[i];
-    }
-    for(int i=0;i<n;i++){
-        arr[i] = temp[i];
+        temp[(i+k)%n] = arr[i];
     }
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
