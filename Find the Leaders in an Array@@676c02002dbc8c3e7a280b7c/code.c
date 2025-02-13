@@ -23,6 +23,6 @@ int main(){
             m = arr[i];
         }
     }
-    printf("%d %d",arr[0],m);
+    printf("%d %d",m,arr[0]);
     return 0;
 }
