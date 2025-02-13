@@ -27,7 +27,7 @@ int main(){
             int diff = arr[i] - arr[j];
             if(diff < 0) diff = -diff;
             if(diff == min_diff){
-                printf("%d %d",arr[i],arr[j])
+                printf("%d %d",arr[i],arr[j]);
             }
         }
     }
