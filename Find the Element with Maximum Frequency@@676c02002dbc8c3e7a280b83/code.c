@@ -14,7 +14,7 @@ int main(){
         int count = 0;
         for(int j=0;j<n;j++){
             if(arr[i] == arr[j]){
-                count++
+                count++;
             }
         }
         if(count > max){
