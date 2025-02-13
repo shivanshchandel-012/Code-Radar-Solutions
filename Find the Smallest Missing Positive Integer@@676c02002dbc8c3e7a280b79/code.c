@@ -16,11 +16,10 @@ int main(){
             }
         }
     }
-    int miss = n+1;
+    int miss = 1;
     for(int i=0;i<n;i++){
-        if(arr[i] > 0 && arr[i] != i+1){
-            miss = i+1;
-            break;
+        if(arr[i] == miss){
+            mis++;
         }
     }
     printf("%d",miss);
