@@ -18,7 +18,7 @@ int main(){
     }
     int miss = n+1;
     for(int i=0;i<n;i++){
-        if(arr[i] != i+1){
+        if(arr[i] > 0 && arr[i] != i+1){
             miss = i+1;
             break;
         }
