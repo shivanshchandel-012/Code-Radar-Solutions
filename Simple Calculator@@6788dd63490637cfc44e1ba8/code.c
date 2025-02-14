@@ -12,8 +12,6 @@ int main(){
         printf("%.0lf",a/b);
     }else if(c == '-'){
         printf("%.0lf",a-b);
-    }else if(a == 6 && b == 0 && c == '/'){
-        printf("error");
     }
     return 0;
 }
