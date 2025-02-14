@@ -11,9 +11,9 @@ int main(){
         printf("%lf",a*b);
     }else if(c == '/'){
         if(b == 0) printf("error");
-        else printf("%lf",a/b);}
+        else printf("%lf",a/b);
     }
-    }else if(c == '-'){
+    else if(c == '-'){
         printf("%lf",a-b);
     }
     return 0;
