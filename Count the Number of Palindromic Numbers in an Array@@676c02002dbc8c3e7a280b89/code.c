@@ -9,13 +9,14 @@ int main(){
     int count = 0;
     for(int i=0;i<n;i++){
         int or = arr[i];
+        if(arr[i] < 0) arr[i] = -arr[i];
         int rev = 0,rem;
         while(arr[i] != 0){
             rem = arr[i]%10;
             rev = rev*10 + rem;
             arr[i] /= 10;
         }
-        if(rev == or || rev == -or) count++;
+        if(rev == or) count++;
     }
     printf("%d",count);
 }
