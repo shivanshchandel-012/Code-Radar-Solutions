@@ -7,12 +7,15 @@ int main(){
         scanf("%d",&arr[i])
     }
     int count = 0;
-    int rev=0,rem;
     for(int i=0;i<n;i++){
-        rem = arr[i]%10;
-        rev = rev*10+rem;
-        arr[i] /= 10;
-        if(arr[i] == rev) count++;
+        int or = arr[i];
+        int rev = 0,rem;
+        while(arr[i] != 0){
+            rem = arr[i]%10;
+            rev = rev*10 + rem;
+            arr[i] /= 10;
+        }
+        if(rev == or) count++;
     }
     printf("%d",count);
 }
