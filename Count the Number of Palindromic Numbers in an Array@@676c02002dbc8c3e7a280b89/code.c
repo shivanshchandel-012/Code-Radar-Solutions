@@ -15,7 +15,7 @@ int main(){
             rev = rev*10 + rem;
             arr[i] /= 10;
         }
-        if(rev == or) count++;
+        if(rev == or || rev == -or) count++;
     }
     printf("%d",count);
 }
