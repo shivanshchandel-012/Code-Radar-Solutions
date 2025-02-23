@@ -13,7 +13,7 @@ int main(){
         int rev = 0;
         while(arr[i] != 0){
             rev = rev*10;
-            rev += arr[i]%10
+            rev += arr[i]%10;
             arr[i] /= 10;
         }
         if(rev == or) count++;
