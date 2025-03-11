@@ -2,8 +2,7 @@
 int main(){
     char str[100];
     int i=0,j=0;
-    scanf("%s",str);
-    fgets();
+    fgets(str,100,stdin);
     while(str[i]){
         if(str[i]!=' '){
             str[j++] = str[i];
