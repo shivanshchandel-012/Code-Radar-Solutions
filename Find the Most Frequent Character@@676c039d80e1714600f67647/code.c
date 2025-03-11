@@ -3,7 +3,7 @@
 
 int main(){
     char str[100];
-    int freq[256] = {0};
+    int freq[256] = {};
     int i=0;
     while(scanf("%c",&str[i]) != '\n' && str[i] != '\n'){
         i++;
