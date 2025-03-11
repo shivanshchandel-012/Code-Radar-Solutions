@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-void s(char str[]){
+void s(char str[100]){
     int len = strlen(str);
     for(int i=0;str[i]<len-1;i++){
         for(int j=i+1;j<len;j++){
