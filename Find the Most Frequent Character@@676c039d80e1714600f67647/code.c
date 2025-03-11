@@ -5,7 +5,7 @@ int main(){
     char str[50];
     scanf("%s",str);
     int freq[256];
-    for(int i=0;str[i]!='\0';i++){
+    for(int i=0;str[i]!=EOF;i++){
         freq[str[i]]++;
     }
     int max_freq = 0;
