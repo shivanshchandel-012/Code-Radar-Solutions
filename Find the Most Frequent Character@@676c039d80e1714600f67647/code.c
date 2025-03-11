@@ -11,7 +11,7 @@ int main(){
     int max_freq = 0;
     for(int i=0;i<256;i++){
         if(freq[i] > max_freq){
-            max_freq = freq[i]
+            max_freq = freq[i];
         }
     }
     for(int i='a';i<='z';i++){
