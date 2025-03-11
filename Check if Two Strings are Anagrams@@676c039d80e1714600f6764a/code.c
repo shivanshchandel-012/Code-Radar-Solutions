@@ -2,7 +2,7 @@
 #include<string.h>
 void s(char str[100]){
     int len = strlen(str);
-    for(int i=0;str[i]<len-1;i++){
+    for(int i=0;i<len-1;i++){
         for(int j=i+1;j<len;j++){
             if(str[i] > str[j]){
                 char temp = str[i];
