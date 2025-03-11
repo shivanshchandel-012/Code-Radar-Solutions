@@ -4,7 +4,8 @@
 int main(){
     char str1[100];
     char str2[100];
-    scanf("%s %s",str1,str2);
+    fgets(str1,100,stdin);
+    fgets(str2,100,stdin);
     char str3[100];
     int i=0,j=0;
     while(str1[i] != '\0'){
