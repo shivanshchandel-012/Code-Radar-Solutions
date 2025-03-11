@@ -2,23 +2,27 @@
 #include<stdio.h>
 
 int main(){
-    char str[50];
-    scanf("%s",str);
-    int freq[256];
-    for(int i=0;str[i]!=EOF;i++){
-        freq[str[i]]++;
+    char str[100];
+    int freq[256] = 0;
+    int i=0;
+    while(scanf("%c",&str[i]) != '\n' && str[i] != '\n'){
+        i++;
     }
-    int max_freq = 0;
-    for(int i=0;i<256;i++){
-        if(freq[i] > max_freq){
-            max_freq = freq[i];
+    i = '\0';
+    for(int j=0;str[j]!=EOF;j++){
+        freq[str[j]]++;
+    }
+    char mf = str[0];
+    int mc = str[0];
+    for(int j=1;str[j]!=EOF;j++){
+        if(freq[str[j]] > mc){
+            mc = freq[str[j]];
+            mf = str[j];
+        }
+        else if(mc == freq[str[j]]){
+            if(str[j] < mf) mf = str[j];
         }
     }
-    for(int i='a';i<='z';i++){
-        if(freq[i] == max_freq){
-            printf("%c",i);
-            break;
-        }
-    }
+    printf("%c",mf);
     return 0;
 }
