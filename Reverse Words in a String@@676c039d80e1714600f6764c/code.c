@@ -2,7 +2,6 @@
 #include <string.h>
 int main(){
     char str[40];
-    puts("Enter a string:");
     scanf("%[^\n]s",str);
     int size = 0;
     int i = 0;
