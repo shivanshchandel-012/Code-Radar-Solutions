@@ -5,10 +5,10 @@ int main(){
     fgets(str,100,stdin);
     for(int i=0;s[i]!='\0';i++){
         if(isupper(str[i])){
-            str[i] = tolower();
+            str[i] = tolower(str[i]);
         }
         else if(islower(str[i])){
-            str[i] = toupper;
+            str[i] = toupper(str[i]);
         }
     }
     puts(str);
