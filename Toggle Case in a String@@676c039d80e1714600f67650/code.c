@@ -3,7 +3,7 @@
 int main(){
     char str[100];
     fgets(str,100,stdin);
-    for(int i=0;s[i]!='\0';i++){
+    for(int i=0;str[i]!='\0';i++){
         if(isupper(str[i])){
             str[i] = tolower(str[i]);
         }
