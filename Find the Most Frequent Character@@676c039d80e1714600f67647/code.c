@@ -5,7 +5,7 @@ int main() {
     int freq[256] = {0};
     fgets(str,100,stdin);
     int i=0;
-    while(s[i] != '\0'){
+    while(str[i] != '\0'){
         freq[str[i]]++;
         i++;
     }
