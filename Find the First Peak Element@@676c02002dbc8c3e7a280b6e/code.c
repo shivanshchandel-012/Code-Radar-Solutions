@@ -12,6 +12,7 @@ int main(){
         if(arr[i-1] < arr[i] && arr[i] > arr[i+1]){
             arr[i] = max;
         }
+        else arr[i] = -1;
     }
     printf("%d",max);
     return 0;
