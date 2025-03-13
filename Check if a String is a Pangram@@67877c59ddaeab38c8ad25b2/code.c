@@ -6,7 +6,6 @@ int main(){
     for(int i=0;str[i]!=EOF;i++){
         if((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')){
             a = 1;
-            break;
         }
     }
     if(a==1) printf("Yes");
