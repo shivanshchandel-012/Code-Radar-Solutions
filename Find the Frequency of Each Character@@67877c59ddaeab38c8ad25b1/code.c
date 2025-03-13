@@ -10,7 +10,7 @@ int main() {
     }
     for (int i = 0; str[i] != '\0'; i++) {
         if (freq[(unsigned char)str[i]] > 0) {
-            printf("%c:%d ", str[i], freq[(unsigned char)str[i]]);
+            printf("%c: %d\n", str[i], freq[(unsigned char)str[i]]);
             freq[(unsigned char)str[i]] = 0; 
         }
     }
