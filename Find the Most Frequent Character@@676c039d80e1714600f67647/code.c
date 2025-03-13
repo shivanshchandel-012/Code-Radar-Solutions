@@ -6,7 +6,7 @@ int main() {
     fgets(str,100,stdin);
     int i=0;
     while(s[i] != '\0'){
-        freq[str[i]]++
+        freq[str[i]]++;
         i++;
     }
     char mf = str[0];
