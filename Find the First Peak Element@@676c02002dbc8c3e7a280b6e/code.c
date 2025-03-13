@@ -13,6 +13,6 @@ int main(){
             if(arr[i] > max) arr[i] = max;
         }
     }
-    printf("%d",max);
+    if(!max == -1) printf("%d",max);
     return 0;
 }
