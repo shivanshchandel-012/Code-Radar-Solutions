@@ -8,6 +8,9 @@ int main(){
         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
             str[i] = ch;
         }
+        else if(str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U'){
+            str[i] = ch;
+        } 
     }
     printf("%s",str);
     return 0;
