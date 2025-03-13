@@ -2,30 +2,26 @@
 
 int main() {
     char str[100];
-    int freq[256] = {0}; 
-    int i = 0;
-    while (scanf("%c", &str[i]) && str[i] != '\n') {
+    int freq[256] = {0};
+    fgets(str,100,stdin);
+    int i=0;
+    while(s[i] != '\0'){
+        freq[str[i]]++
         i++;
     }
-    str[i] = '\0'; 
-    for (int j = 0; str[j] != '\0'; j++) {
-        freq[str[j]]++;
-    }
     char mf = str[0];
-    int mc = freq[str[0]];
-
-    for (int j = 1; str[j] != '\0'; j++) {
-        if (freq[str[j]] > mc) {
-            mc = freq[str[j]];
-            mf = str[j];
+    int count = freq[mf];
+    for(i=1;str[i]!='\0';i++){
+        if(freq[str[i]] > mf){
+            mf = str[i];
+            count = freq[str[i]];
         }
-        else if (freq[str[j]] == mc) {
-            if (str[j] < mf) {  
-                mf = str[j];
+        else if(freq[str[i]] == count){
+            if (str[i] < mf){
+                mf = str[i];
             }
         }
     }
-
     printf("%c",mf);
     return 0;
 }
