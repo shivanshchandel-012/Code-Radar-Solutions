@@ -9,6 +9,6 @@ int main(){
         }
     }
     if(a==1) printf("Yes");
-    else printf("No");
+    else if(a)printf("No");
     return 0;
 }
