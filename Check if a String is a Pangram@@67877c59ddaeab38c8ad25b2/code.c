@@ -2,10 +2,10 @@
 int main(){
     char str[100];
     fgets(str,100,stdin);
-    int a=1;
+    int a=0;
     for(int i=0;str[i]!=EOF;i++){
         if((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')){
-            a = 0;
+            a = 1;
             break;
         }
     }
