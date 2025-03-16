@@ -8,7 +8,7 @@ int main(){
         for(int i=0;str[i]!='\0';i++){
             if(tolower(str[i]) == ch){
                 a = 1;
-                break
+                break;
             }
         }
         if(!a){
