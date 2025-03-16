@@ -12,8 +12,8 @@ int main(){
         else{
             word[len] = '\0';
             if(len > maxlen){
-                len = maxlen;
-                strcpy(lw,str);
+                maxlen = len;
+                strcpy(lw,word);
             }
             len = 0;
         }
