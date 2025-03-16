@@ -5,7 +5,7 @@ int main(){
     fgets(str,100,stdin);
     int a=0;
     for(int i=0;str[i]!=EOF;i++){
-        char ch = tolower(str);
+        char ch = tolower(str[i]);
         if(str[i] >= 'a' && str[i] <= 'z'){
             a = 1;
         }
