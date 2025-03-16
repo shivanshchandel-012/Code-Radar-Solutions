@@ -8,8 +8,8 @@ int main(){
                 for(int k=j;k!='\0';k++){
                     str[k] = str[k+1];
                 }
+                j--;
             }
-            j--;
         }
     }
     printf("%s",str);
