@@ -3,11 +3,17 @@
 int main(){
     char str[100];
     fgets(str,100,stdin);
-    int a=0;
-    for(int i=0;str[i]!=EOF;i++){
-        char ch = tolower(str[i]);
-        if(str[i] >= 'a' && str[i] <= 'z'){
-            a = 1;
+    for(char ch='a';ch<='z';ch++){
+        int a;
+        for(int i=0;str[i]!='\0';i++){
+            if(tolower(str[i]) == ch){
+                a = 1;
+                break
+            }
+        }
+        if(!a){
+            a = 0;
+            break;
         }
     }
     if(a==1) printf("Yes");
