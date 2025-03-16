@@ -3,6 +3,7 @@
 
 int main() {
     char str[100];
+    fgets(str,100,stdin);
     int len = strlen(str);
     int i, j = 0;
     int seen[256] = {0};
