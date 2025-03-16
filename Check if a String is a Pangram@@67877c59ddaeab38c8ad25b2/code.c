@@ -2,6 +2,7 @@
 #include<ctype.h>
 int main(){
     char str[100];
+    int b=1;
     fgets(str,100,stdin);
     for(char ch='a';ch<='z';ch++){
         int a;
@@ -12,11 +13,11 @@ int main(){
             }
         }
         if(!a){
-            a = 0;
+            b = 0;
             break;
         }
     }
-    if(a==1) printf("Yes");
-    else if(a == 0)printf("No");
+    if(b==1) printf("Yes");
+    else if(b == 0)printf("No");
     return 0;
 }
