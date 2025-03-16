@@ -1,20 +1,18 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+
+int main() {
     char str[100];
     int len = strlen(str);
-    fgets(str,100,stdin);
-    for(int i=0;str[i]!=len;i++){
-        for(int j=i+1;str[j]!=len;j++){
-            if(str[i] == str[j]){
-                for(int k=j;k!=len;k++){
-                    str[k] = str[k+1];
-                }
-                len--;
-                j--;
-            }
+    int i, j = 0;
+    int seen[256] = {0};
+    for (i = 0; i < len; i++) {
+        if (seen[str[i]] == 0) {
+            str[j++] = str[i]; 
+            seen[str[i]] = 1; 
         }
     }
-    printf("%s",str);
+    str[j] = '\0';
+    printf("String after removing duplicates: %s\n", str);
     return 0;
 }
