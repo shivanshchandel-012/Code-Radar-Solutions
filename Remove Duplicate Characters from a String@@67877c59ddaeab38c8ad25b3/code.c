@@ -13,6 +13,6 @@ int main() {
         }
     }
     str[j] = '\0';
-    printf("String after removing duplicates: %s\n", str);
+    printf("%s",str);
     return 0;
 }
