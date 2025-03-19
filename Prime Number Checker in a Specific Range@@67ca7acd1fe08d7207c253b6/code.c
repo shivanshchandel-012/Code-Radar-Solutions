@@ -1,3 +1,4 @@
+#include<math.h>
 void isPrime(int num){
     if(num <= 1) return 0;
     for(int i=2;i<=sqrt(num);i++){
