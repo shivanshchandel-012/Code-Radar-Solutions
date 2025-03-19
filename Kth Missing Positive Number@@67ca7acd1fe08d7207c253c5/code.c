@@ -1,11 +1,15 @@
 int findKthMissing(int arr[],int n,int k){
-    int s1 = 0;
-    for(int i=0;i<=n-2;i++){
-        s1 += arr[i];
+    int count = 0;
+    int exp = 0;
+    while(count < k){
+        if(i<n && arr[i]==exp){
+            i++;
+        }else{
+            count++;
+            if(count == k){
+                return exp;
+            }
+        }
+        exp++;
     }
-    int s2 = 0;
-    for(int i=0;i<=n-1;i++){
-        s2 += arr[i];
-    }
-    return s2-s1;
 }
