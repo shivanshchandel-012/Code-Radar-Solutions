@@ -1,11 +1,18 @@
-#include<math.h>
+int isPrime(int num){
+    if(num <= 1) return 0;
+    else if(num == 2) return 1;
+    else if(num % 2 == 0) return 0;
+    for(int i=3;i<=num/2;i+=2){
+        if(num%i == 0){
+            return 0;
+        }
+    }
+    return 1;
+} 
 void printPrimesInRange(int a,int b){
-    int num;
-    for(int i=2;i<=sqrt(num);i++){
-        for(int i=a;i<=b;i++){
-            if(num%i!=0){
-                printf("%d ",num);
-            }
+    for(int i=a;i<=b;i++){
+        if(isPrime(num)){
+            printf("%d ",num);
         }
     }
 }
