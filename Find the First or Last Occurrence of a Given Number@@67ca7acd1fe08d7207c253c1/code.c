@@ -5,9 +5,9 @@ int findOccurrence(int arr[],int n,int target,char mode){
         int mid = low+(high-low)/2;
         if(arr[mid] == target){
             if(mode == 'F'){
-                return mid;
-                break;
+                high = mid-1;
             }
+            else return mid;
         }
         else if(arr[mid]>target) high = mid-1;
         else low = mid+1;
