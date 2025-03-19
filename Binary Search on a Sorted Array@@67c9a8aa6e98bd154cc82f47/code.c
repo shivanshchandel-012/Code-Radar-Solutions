@@ -4,6 +4,6 @@ int binarySearch(int arr[],int n,int target){
             return i;
             break;
         }
-        else return -1;
     }
+    return -1;
 }
