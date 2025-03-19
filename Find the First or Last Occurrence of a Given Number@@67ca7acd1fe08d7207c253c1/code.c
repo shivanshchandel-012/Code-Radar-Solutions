@@ -1,7 +1,6 @@
-int findOccurence(int arr[],int n,int target,int mode){
+int findOccurence(int arr[],int n,int target,char mode){
     int low=0;
     int high=n-1;
-    char mode;
     while(low <= high){
         int mid = low+(high-low)/2;
         if(arr[mid] == target){
