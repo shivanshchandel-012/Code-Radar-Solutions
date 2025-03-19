@@ -12,7 +12,7 @@ int searchInRotatedArray(int arr[],int n,int target){
             }
         }
         else{
-            if(arr[mid] < taregt && target <= arr[high]){
+            if(arr[mid] < target && target <= arr[high]){
                 low = mid+1;
             }
             else{
