@@ -3,7 +3,13 @@ int fact(int n){
     return n*fact(n-1);
 }
 void factorialRange(int a,int b){
-    for(int i=a;i<=b;i++){
-        printf("%d\n",fact(i));
+    if(start < end){
+        for(int i=a;i<=b;i++){
+            printf("%d\n",fact(i));
+        }
     }
+    else if(start > end){
+        printf("Invalid range");
+    }
+
 }
