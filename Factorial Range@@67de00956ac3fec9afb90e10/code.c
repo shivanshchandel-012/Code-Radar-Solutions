@@ -5,6 +5,6 @@ int fact(){
 }
 void factorialRange(int a,int b){
     for(int i=a;i<=b;i++){
-        printf("%d\n",fact(n));
+        printf("%d\n",fact(i));
     }
 }
